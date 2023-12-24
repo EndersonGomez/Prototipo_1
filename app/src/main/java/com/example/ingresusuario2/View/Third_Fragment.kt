@@ -17,6 +17,7 @@ class Third_Fragment : Fragment() {
     //Instanciamos el objeto viewBinding.
     private lateinit var mBinding: FragmentThirdBinding
 
+
     //Instanciamos el viewModel.
     private val mViewModel: UserViewModel by viewModels()
 
@@ -28,6 +29,7 @@ class Third_Fragment : Fragment() {
     private var horario: String? = null
     private var foto: String? = null
     private var fechaHora: Date = Date()
+    private var ubicacion: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +42,8 @@ class Third_Fragment : Fragment() {
             cargo = bundle.getString("cargo")
             horario = bundle.getString("horario")
             foto = bundle.getString("foto")
+            ubicacion = bundle.getString("ubicacion")
+
         }
 
     }
@@ -65,26 +69,28 @@ class Third_Fragment : Fragment() {
 
         //Guardamos los datos obtenidos en un objeto para pasarlos como parametro al post.
         val valorPrueba = UserSend(
-            spreadsheet_id = "1aQD1jNQfX4iDiJxcsiZpaixPg009BUCPaI3hQ6rI5rk",
-            sheet = "registro",
+            spreadsheet_id = "",
+            sheet = "",
             rows = listOf(
                 listOf(
                     "5",
                     "${accion}",
                     "${nombre}",
                     "${rut}",
-                    "4${cargo}",
+                    "${cargo}",
                     "${fechaHora}",
-                    "trabajo",
+                    "${ubicacion}",
                     "${foto}"
                 )
             )
         )
 
-
         //Configuramos el evento escuchador para llamar al metodo
         mBinding.btConfirmar.setOnClickListener {
             mViewModel.enviarDatosAlServidor(valorPrueba)
+
+            // Cerramos la aplicación
+            activity?.finishAffinity()
         }
     }
 }

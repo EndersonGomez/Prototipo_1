@@ -37,8 +37,6 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
         //Llama al metodo del repositorio para matar la courutina y ejecutar el retrofit.
         viewModelScope.launch {
             repository.fetchUser()
-
-            Log.d("Ejecutar", "Se esta pasando los datos a la base de datos")
         }
     }
 

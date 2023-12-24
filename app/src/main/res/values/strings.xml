@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">IngresUsuario2</string>
+    <string name="app_name">INVERSEG</string>
 
     <!-- Recursos del First Fragment-->
     <string name="boton_ingresar">INGRESAR</string>
     <string name="boton_salir">SALIR</string>
 
     <!-- Recursos del Second Fragment-->
-    <string name="ejemploTv">Ejemplo 22.324.323-5</string>
+    <string name="ejemploTv">Ejemplo 22.324.323–5</string>
     <string name="buton_1">1</string>
     <string name="buton_2">2</string>
     <string name="buton_3">3</string>

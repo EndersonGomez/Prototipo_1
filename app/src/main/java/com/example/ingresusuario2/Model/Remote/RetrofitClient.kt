@@ -32,7 +32,6 @@ class RetrofitClient {
                 .addInterceptor(loggingInterceptor)
                 .build()
 
-            //
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(client) // Usar el cliente con el interceptor

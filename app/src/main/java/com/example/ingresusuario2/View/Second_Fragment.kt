@@ -23,7 +23,6 @@ class Second_Fragment : Fragment() {
     private val mViewModel: UserViewModel by viewModels()
 
     //Instanciamos una variable para recibir el objeto bundle.
-
     private var accion: String? = null
 
     //Creamos la variable que va ir guardando la eleccion inmediata del usuario.
@@ -55,6 +54,12 @@ class Second_Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Instancio mi activity
+        val miActivity = requireActivity() as MainActivity
+
+        //Guardo dentro de una variable la ubicacion que obtuve en mi activity.
+        val ubicacion = miActivity.ubicacionString
+
         //Configuramos el objeto textviewSeteo
         textViewSeteo = mBinding.tvRutMostrar
 
@@ -76,7 +81,7 @@ class Second_Fragment : Fragment() {
         //Seteamos el valor del textview a vacio para volver a comenzar.
         mBinding.tvReiniciar.setOnClickListener {
             mBinding.tvRutMostrar.text = " "
-            //Tengo que formatear seleccion igual para borrar los datos anteriores.
+            //Tnombreengo que formatear seleccion igual para borrar los datos anteriores.
             seleccion = ""
         }
 
@@ -98,6 +103,7 @@ class Second_Fragment : Fragment() {
                             putString("cargo",user.Cargo)
                             putString("horario",user.Horario)
                             putString("foto",user.Foto)
+                            putString("ubicacion",ubicacion)
                         }
                         findNavController().navigate(
                             R.id.action_second_Fragment_to_third_Fragment,
