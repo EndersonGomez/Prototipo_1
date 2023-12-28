@@ -65,8 +65,8 @@ class Third_Fragment : Fragment() {
 
         //Guardamos los datos obtenidos en un objeto para pasarlos como parametro al post.
         val valorPrueba = UserSend(
-            spreadsheet_id = "1aQD1jNQfX4iDiJxcsiZpaixPg009BUCPaI3hQ6rI5rk",
-            sheet = "registro",
+            spreadsheet_id = "",
+            sheet = "",
             rows = listOf(
                 listOf(
                     "5",
