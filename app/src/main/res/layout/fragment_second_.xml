@@ -13,6 +13,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
+        android:background="@color/design_default_color_secondary"
         android:text="@string/ejemploTv"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -25,172 +26,228 @@
         android:id="@+id/ivNumero1"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="@string/buton_1"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_1"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar" />
+        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivNumero2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="@string/buton_2"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_2"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
         app:layout_constraintStart_toEndOf="@+id/ivNumero1"
-        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar" />
+        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivNumero3"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="@string/buton_3"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_3"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
         app:layout_constraintStart_toEndOf="@+id/ivNumero2"
-        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar" />
+        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivGuion"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_raya"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@+id/ivNumero3"
+        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivNumero4"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginLeft="18dp"
-        android:text="@string/buton_4"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/ivNumero3"
-        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar" />
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_4"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivNumero1"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivNumero5"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="@string/buton_5"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero1" />
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_5"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@id/ivNumero4"
+        app:layout_constraintTop_toBottomOf="@id/ivNumero2"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivNumero6"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
         android:text="@string/buton_6"
-        android:textSize="40sp"
         android:textColor="@color/black"
-        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
         app:layout_constraintStart_toEndOf="@id/ivNumero5"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero2" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ivNumero7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/buton_7"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@id/ivNumero6"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero3" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ivNumero8"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/buton_8"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@id/ivNumero7"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero4" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ivNumero9"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/buton_9"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero5" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ivNumero0"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/buton_0"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@id/ivNumero9"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero6" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ivGuion"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="@string/buton_raya"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@id/ivNumero0"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero7" />
+        app:layout_constraintTop_toBottomOf="@id/ivNumero3"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ivK"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="@string/buton_k"
-        android:textSize="40sp"
-        android:textColor="@color/black"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@id/ivGuion"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero8" />
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_k"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@id/ivNumero6"
+        app:layout_constraintTop_toBottomOf="@id/ivGuion"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivNumero7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_7"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivNumero4"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivNumero8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_8"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@id/ivNumero7"
+        app:layout_constraintTop_toBottomOf="@id/ivNumero5"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivNumero9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_9"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@id/ivNumero8"
+        app:layout_constraintTop_toBottomOf="@id/ivNumero6"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivNumero0"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#08BAC1"
+        android:text="@string/buton_0"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:cornerRadius="150dp"
+        app:layout_constraintStart_toEndOf="@id/ivNumero9"
+        app:layout_constraintTop_toBottomOf="@id/ivK"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tvReiniciar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:background="@color/black"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:gravity="center"
         android:text="@string/button_reiniciar"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivNumero0" />
+        app:layout_constraintTop_toBottomOf="@id/ivNumero8" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tvConfirmar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:background="@color/black"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_700"
         android:gravity="center"
         android:text="@string/button_confirmar"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvReiniciar" />

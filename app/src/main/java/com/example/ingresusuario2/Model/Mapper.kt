@@ -7,6 +7,7 @@ import com.example.ingresusuario2.Model.Remote.UserDataApi
 fun fromInternetToUserEntity(userlist: UserDataApi) : List<UserEntity> {
     return userlist.persona.map {
         UserEntity(
+            ID = it.ID ?: "",
             Nombre = it.Nombre ?: "",
             RUT = it.RUT ?: "",
             Cargo = it.Cargo ?: "",

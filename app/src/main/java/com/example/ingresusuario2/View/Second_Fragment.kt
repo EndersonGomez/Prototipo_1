@@ -93,6 +93,7 @@ class Second_Fragment : Fragment() {
 
                         val bundle = Bundle().apply {
                             putString("accion", accion)
+                            putString("ID",user.ID)
                             putString("nombre", user.Nombre)
                             putString("rut", user.RUT)
                             putString("cargo",user.Cargo)

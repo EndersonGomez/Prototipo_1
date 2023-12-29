@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.example.ingresusuario2.Model.Remote.UserSend
 import com.example.ingresusuario2.ModelView.UserViewModel
+import com.example.ingresusuario2.R
 import com.example.ingresusuario2.databinding.FragmentThirdBinding
 import java.util.Date
 
@@ -22,6 +23,7 @@ class Third_Fragment : Fragment() {
 
     //Instanciamos una variable para recibir los objeto bundle.
     private var accion: String? = null
+    private var id: String? = null
     private var nombre: String? = null
     private var rut: String? = null
     private var cargo: String? = null
@@ -35,6 +37,7 @@ class Third_Fragment : Fragment() {
 
             //Guardamos los datos obtenidos del usuario en las variables.
             accion = bundle.getString("accion")
+            id = bundle.getString("ID")
             nombre = bundle.getString("nombre")
             rut = bundle.getString("rut")
             cargo = bundle.getString("cargo")
@@ -57,7 +60,7 @@ class Third_Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //Cargamos los datos en la vista.
-        Glide.with(requireContext()).load(foto).centerCrop().into(mBinding.ivImagen)
+        Glide.with(requireContext()).load(foto).centerCrop().error(R.drawable.ic_launcher_foreground) .into(mBinding.ivImagen)
         mBinding.tvNombre.text = nombre
         mBinding.tvRut.text = rut
         mBinding.tvCargo.text = cargo
@@ -69,18 +72,17 @@ class Third_Fragment : Fragment() {
             sheet = "",
             rows = listOf(
                 listOf(
-                    "5",
+                    "${id}",
                     "${accion}",
                     "${nombre}",
                     "${rut}",
-                    "4${cargo}",
+                    "${cargo}",
                     "${fechaHora}",
                     "trabajo",
                     "${foto}"
                 )
             )
         )
-
 
         //Configuramos el evento escuchador para llamar al metodo
         mBinding.btConfirmar.setOnClickListener {
