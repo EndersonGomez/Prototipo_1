@@ -10,6 +10,7 @@
         android:name="com.example.ingresusuario2.View.First_Fragment"
         android:label="fragment_first_"
         tools:layout="@layout/fragment_first_" >
+
         <action
             android:id="@+id/action_first_Fragment_to_second_Fragment"
             app:destination="@id/second_Fragment" />
@@ -20,12 +21,19 @@
         android:label="fragment_second_"
         tools:layout="@layout/fragment_second_" >
         <action
-            android:id="@+id/action_second_Fragment_to_third_Fragment"
-            app:destination="@id/third_Fragment" />
+            android:id="@+id/action_second_Fragment_to_third_fragment"
+            app:destination="@id/third_fragment" />
+        <action
+            android:id="@+id/action_second_Fragment_to_first_Fragment"
+            app:destination="@id/first_Fragment" />
     </fragment>
     <fragment
-        android:id="@+id/third_Fragment"
-        android:name="com.example.ingresusuario2.View.Third_Fragment"
-        android:label="fragment_third_"
-        tools:layout="@layout/fragment_third_" />
+        android:id="@+id/third_fragment"
+        android:name="com.example.ingresusuario2.View.third_fragment"
+        android:label="fragment_third_fragment"
+        tools:layout="@layout/fragment_third_fragment" >
+        <action
+            android:id="@+id/action_third_fragment_to_first_Fragment"
+            app:destination="@id/first_Fragment" />
+    </fragment>
 </navigation>

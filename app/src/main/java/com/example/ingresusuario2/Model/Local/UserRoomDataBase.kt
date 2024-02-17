@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [UserEntity::class], version = 5, exportSchema = false)
+@Database(entities = [UserEntity::class], version = 6, exportSchema = false)
 abstract class UserRoomDataBase : RoomDatabase() {
 
     //Funcion que tiene que ser abstracta para llamar al dao

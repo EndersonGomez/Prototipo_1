@@ -4,9 +4,7 @@
     <!-- Recursos del First Fragment-->
     <string name="boton_ingresar">INGRESAR</string>
     <string name="boton_salir">SALIR</string>
-
-    <!-- Recursos del Second Fragment-->
-    <string name="ejemploTv">Ejemplo 22.324.323-5</string>
+    <string name="ejemploTv">22.324.323-5</string>
     <string name="buton_1">1</string>
     <string name="buton_2">2</string>
     <string name="buton_3">3</string>
@@ -20,15 +18,16 @@
     <string name="buton_9">9</string>
     <string name="buton_0">0</string>
 
-    <string name="button_confirmar">CONFIRMAR</string>
-    <string name="button_reiniciar">REINICIAR</string>
-
-    <!-- Recursos del Third Fragment-->
+    <!-- Recursos del Second Fragment-->
     <string name="tv_nombre">NOMBRE</string>
     <string name="tv_rut">RUT</string>
     <string name="tv_cargo">CARGO</string>
     <string name="tv_horario">HORARIO</string>
     <string name="button_confirmar_datos">CONFIRMAR</string>
+
+    <!-- Recursos del Third Fragment-->
+    <string name="registrar_ronda">REGISTRAR RONDA</string>
+    <string name="cerrar_turno">CERRAR TURNO</string>
 
 
 
